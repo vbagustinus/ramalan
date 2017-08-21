@@ -1,0 +1,83 @@
+Membuat data array weton
+Membuat data array zodiak
+<!--Mencari data weton-->
+    membuat variabel ambiltanggal dan membuat waktu baru dengan urutan tahun, bulan dan tanggal
+    Mambuat variabel kodeBulan berisi nilai 0
+    membuat switch bulan dengan 
+        keadaan 1 atau 10 maka kodeBulan bernilai 0
+        keadaan 5 maka kodeBulan bernilai 1
+        keadaan 8 maka kodeBulan bernilai 2
+        keadaan 2 atau 3 atau 11 maka kodeBulan bernilai 3
+        keadaan 6 maka kodeBulan bernilai 4
+        keadaan 9 atau 12 maka kodeBulan bernilai 5
+        keadaan default kodeBulan bernilai 6
+    endswitch
+
+    membuat variabel tahunLahir dari tahun modulus 100
+    membuat tahunLahirbagi4 dari Math.floor(tahunLahir dibagi 4)
+    membuat variabel jawaban dari (tahunLahir + tahunLahirBagi4 + tanggal + kodeBulan) % 7
+    membuat swith jawaban dengan
+        keadaan 0 maka tebakan bernilai string minggu
+        keadaan 1 maka tebakan bernilai string senin
+        keadaan 2 maka tebakan bernilai string selasa
+        keadaan 3 maka tebakan bernilai string rabu
+        keadaan 4 maka tebakan bernilai string kamis
+        keadaan 5 maka tebakan bernilai string jumat
+        keadaan 6 maka tebakan bernilai string sabtu
+        keadaan default maka tebakan bernilai string tidak ada
+    endswitch
+
+    membuat fungsi hitungWeton dari prosestanggal
+        membuat inisialisasi dari tanggal baru yang bernilai (70, 0,2)
+        membuat variaber hasil dari prosestanggal.getTime()-inisialisasi.getTime())+86400000)/432000000
+        membuat variabel sisabagi dari Math.round((hasil - Math.floor(hasil)) * 10) / 2
+        membuat switch sisabagi dengan
+            keadaan 0 maka weton bernilai string wage
+            keadaan 1 maka weton bernilai string kliwon
+            keadaan 2 maka weton bernilai string legi
+            keadaan 3 maka weton bernilai string pahing
+            keadaan 4 maka weton bernilai string pon
+            keadaan default maka tebakan bernilai string tidak ada
+        endswitch
+        return weton
+    endfungsi
+
+Membuat fungsi mencariweton
+    memanggil fungsi hitungWeton(ambiltanggal)
+    membuat FOR dimana variabel i samadengan 0 dengan kondisi i kurang dari dataweton.length dan fungsi increment
+        jika tebakan weton sama persis dengan array dataweton[i][1]
+            tampilkan tebakan weton adalah dataweton[i][1]
+        endif
+    endfor
+    jika tebakan weton tidak ada
+        tampilkan string tidak ada data
+    endif
+return dataweton[i]    
+endfungsi
+
+<!-- Mencari data Zodiak-->
+membuat variabel value
+membuat fungsi prediksi
+    membuat variabel bulan untuk mengambil data bulan
+    membuat variabel tanggal untuk menggambil data tanggal
+     membuat IF dimana jika bulan melebihi angka 12 dan tanggal melebihi data kalender
+        tuliskan zodiak tidak apa
+    endif
+    tapi jika bulan kurang dari 12 dan tanggal sesuai data kalender
+        tuliskan value zodiak
+    endif
+endfungsi
+
+membuat fungsi mencariZodiak
+    memanggil fungsi prediksi
+    membuat FOR dimana a samadengan 0 dengan kondisi a kurang dari datazodiak.length dengan fungsi increment
+        jika value sama dengan datazodiak[a][0]
+            tampilkan value adalah datazodiak[a][1]
+        endif
+    endfor
+    jika value tidak ada
+        tuliskan tidak ada
+    endif
+    return datazodiak[a]
+endfungsi
+    

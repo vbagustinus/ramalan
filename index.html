@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ramalan</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Cabin+Condensed:400,700|Hammersmith+One|Neucha|Shadows+Into+Light" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		</head>
+	<body>
+	<script type="text/javascript" src="js/index.js"></script>
+	<header id="header">
+			<nav>
+				<ul class="links">
+					<li><a href="index.html"><i class="fa fa-chevron-circle-up" style="font-size:48px"></i></a></li>
+				</ul>
+			</nav>
+	</header>
+		<section > 
+			<div class="atas">
+				<i class="fa fa-circle-o-notch fa-spin fa-2x fa-fw"></i>
+				<i class="fa fa-empire" style="font-size:72px"></i>
+				<i class="fa fa-circle-o-notch fa-spin fa-2x fa-fw"></i>
+				<p style="font-size: 30px">Ramalan</p>
+				<a href="index.html"><h1>Weton dan Zodiak</h1></a>
+				<div class="store">
+					<a href="#keweton"><i class="fa fa-sign-language" style="font-size:48px"></i> Weton</a>
+					<i class="fa fa-hand-o-left" style="font-size:48px"></i> <i class="fa fa-hand-o-right" style="font-size:48px"></i>					
+					<a href="#kezodiak">Zodiak <i class="fa fa-american-sign-language-interpreting" style="font-size:48px"></i></a>
+				</div>
+			</div>
+			<section class="tengah">		
+					<h2>Ramalan Weton dan Zodiak</h2>
+						<p>Suatu aplikasi dimana kita bisa mencari Weton Jawa dan Zodiak serta gambaran umum sifat seseorang yang memiliki <i>weton atau zodiak </i> berdasarkan tanggal dan bulan lahir. Aplikasi ini hanya untuk hiburan. Jangan di buat acuan dasar untuk memahami sifat seseorang berdasarkan prediksi ini. Bersyukurlah jika sifat baik anda cocok dengan ramalan. Selamat mencoba.</p>
+						<br/><br/><br/><br/><br/>
+			</section>
+			<section id="keweton" class="kecuali">
+					<h2 class="platform">Ramalan berdasarkan Weton:</h2>
+					<div class="row fitur">
+						<form name="formweton">
+							<div>
+							  <label for="bday">Masukkan tanggal : </label>
+							  <br/>
+							  <input type="number" name="itanggalweton" placeholder="Tanggal">
+							  <select name="ibulanweton">
+									<option value="x">Pilih Bulan</option>  
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>  
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>  
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>  
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>  
+                                    <option value="12">December</option>
+							   </select>
+							   <input type="number" name="itahunweton" placeholder="Tahun" >
+							</div>
+							<div>
+									<input onClick="mencaridataweton(this.form)" type="submit" value="Proses">
+							</div>
+						</form>
+					</div>
+			</section>
+			<section id="kezodiak" class="bawah">
+					<h2 class="platform">Ramalan berdasarkan Zodiak:</h2>
+					<div class="row fitur">
+						<form name="formzodiak">
+							<div>
+							  <label for="bday">Masukkan tanggal : </label>
+							  <br/>
+                              <input type="text" name="itanggalz" value="Hari" onClick=value="" placeholder="Tanggal">
+                              <select name="ibulanz">  
+                                    <option value="x">Pilih Bulan</option>  
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>  
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>  
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>  
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>  
+                                    <option value="12">December</option>
+                              </select>
+							</div>
+							<div>
+							  <input onClick="hitungZodiak()" type="submit" value="Proses">
+							</div>
+						</form>
+                    </div> 
+			</section>
+		</section>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					&copy; 2017 by Agustinus
+				</div>
+			</footer>
+
+	</body>
+</html>

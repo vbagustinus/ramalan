@@ -1,0 +1,208 @@
+/* Utama */
+
+body {
+	font-family: 'Neucha', cursive;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+
+#header {
+	color: #71e885;
+	font-family: 'Hammersmith One', sans-serif;
+	cursor: default;
+	height: 3.25em;
+	left: 0;
+	line-height: 3.25em;
+	position: fixed;
+	text-align: right;
+	top: 0;
+	width: 100%;
+	z-index: 10001;
+}
+
+.logo {
+	display: inline-block;
+	height: inherit;
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 21px;
+	left: 1.25em;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+
+}
+i {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 18px;
+}
+h1,h2,h3,h4 {
+	font-family: 'Shadows Into Light', sans-serif;
+}
+
+/* Menu */
+nav {
+	line-height: 1.5em;
+}
+nav ul {
+	position: relative;
+	float: right;
+	padding-right: 20px;
+}
+
+nav li {
+	list-style: none;
+	display: inline-block;
+	padding-right: 20px;
+	font-size: 17px;
+	color: rgba(255, 255, 255, 0.5);
+}
+a {   
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+a:hover {
+	color:paleturquoise;
+	vertical-align: middle;
+	transform: translateZ(0);
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	transition-duration: 0.3s;
+	transition-property: transform;
+	transition-timing-function: ease-out;
+}
+alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+/*Isi*/
+input {
+    width: auto;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 4px;
+	background-color: #f1f1f1;
+	font-size: 20px;
+	text-align: center;
+}
+select {
+    width: auto;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 4px;
+	background-color: #f1f1f1;
+	font-size: 20px;
+	text-align: center;
+}
+ .atas {
+	 text-align: center;
+	 background-color: #006db3;
+	 margin: 0;
+	 padding: 10px 0 10px 0;
+	 color: whitesmoke;
+	 font-size: 30px;
+	 padding-top: 35px;
+ }
+
+ .tengah {
+	 padding: 40px 50px 30px 50px;
+	 margin: 0;
+	 background: #e6ffff;
+	 background-image: url('../img/gambar.png');
+	
+ }
+
+ .kecuali {
+	background-color : rgba(38, 85, 255, 0.8);
+	padding-top: 30px;
+	height: 650px;
+ }
+
+.fitur div {
+	padding: 5px 20px 20px 20px;
+	font-size: 15pt;
+	text-align: center;
+}
+img {
+	height: 50px;
+	padding: 10px;
+}
+ p {
+	 font-size: 18px;
+ }
+
+ .bawah {
+	background-color: #006db3;
+	color: whitesmoke;
+	padding-top: 30px;
+	height: 650px;
+ }
+.isibawah {
+	 padding: 20px;
+ }
+.platform {
+	padding: 20px 0 0 0;
+	text-align: center;
+	font-family: 'Neucha', cursive;
+	float: none;
+}
+.box {
+	padding-top: 10px;
+}
+.kotak {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 20px;
+	padding: 20px;
+	font-size: 15pt;
+	text-align: center;
+	padding-top: 10px;
+ }
+ .hedplatform {
+	font-family: 'Neucha', cursive;
+ }
+
+
+/* Footer */
+
+#footer {
+	float: none;
+	padding: 2rem 15px 2rem 0 ;
+	background: #000;
+	margin: auto;
+	text-align: right;
+
+}
+.copyright {
+	color: #bbb;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {	
+	font-family: 'Neucha', cursive;
+}
+.row {
+    margin-right: -15px;
+	margin-left: -15px;
+	padding: 5px 30px 30px 30px;
+	margin: 0;
+	
+}
+
+.col-md-4, .col-xs-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 20px;
+	padding-left: 20px;
+	display: inline-table;
+}
